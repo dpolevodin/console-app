@@ -14,5 +14,8 @@
     "centimeters"
   ],
   "author": "dpolevodin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
 }
