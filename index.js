@@ -10,4 +10,8 @@ if (!inches) {
   process.exit(1);
 }
 const centimeters = inches * 2.54;
-console.log(`${chalk.blue(inches)} >>> ${chalk.green(centimeters)} см`);
+if (process.env.COLORIZE && process.env.COLORIZE === "no") {
+  console.log(`${inches} >>> ${centimeters} см`);
+} else {
+  console.log(`${chalk.blue(inches)} >>> ${chalk.green(centimeters)} см`);
+}
