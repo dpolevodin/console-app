@@ -13,5 +13,9 @@ const centimeters = inches * 2.54;
 if (process.env.COLORIZE && process.env.COLORIZE === "no") {
   console.log(`${inches} >>> ${centimeters} см`);
 } else {
-  console.log(`${chalk.blue(inches)} >>> ${chalk.green(centimeters)} см`);
+  console.log(
+    `${chalk.blue(inches)} ${chalk.yellow(">>>")} ${chalk.green(
+      centimeters
+    )} см`
+  );
 }
